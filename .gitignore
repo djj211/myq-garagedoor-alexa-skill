@@ -1,0 +1,18 @@
+# package directories
+node_modules
+jspm_packages
+
+# build directories
+.build
+.generated
+.webpack
+
+# Serverless directories
+.serverless
+.dynamodb
+
+# Editor backup files
+*.bak
+*~
+
+.DS_Store

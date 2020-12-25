@@ -1,0 +1,81 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "the garage",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CheckGarageDoorStateIntent",
+                    "slots": [
+                        {
+                            "name": "Door",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "to check {Door}",
+                        "to check if {Door} is closed",
+                        "to check if {Door} is open",
+                        "to check the status of {Door}",
+                        "if {Door} is closed",
+                        "if {Door} is open",
+                        "is {Door} closed",
+                        "is {Door} open",
+                        "check the status of {Door}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "OpenGarageDoorIntent",
+                    "slots": [
+                        {
+                            "name": "Door",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "to open {Door}",
+                        "open {Door}"
+                    ]
+                },
+                {
+                    "name": "CloseGarageDoorIntent",
+                    "slots": [
+                        {
+                            "name": "Door",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "to close {Door}",
+                        "close {Door}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

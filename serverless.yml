@@ -1,0 +1,25 @@
+service: garagedooralexaskill
+custom:
+  alexaSkillId: '${opt:skillId}'
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-webpack
+  
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+  stage: dev
+  region: us-east-1
+
+  environment:
+    MYQ_USER: '${opt:myqUser}'
+    MYQ_PASSWORD: '${opt:myqPass}'
+
+functions:
+  skill:
+    handler: src/functions/garageDoor/index.handler
+    events:
+      - alexaSkill: '${self:custom.alexaSkillId}'

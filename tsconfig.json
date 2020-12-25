@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "lib": ["es2018", "dom"],
+      "outDir": ".build",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "noImplicitThis": true,
+      "noImplicitReturns": true,
+      "strictNullChecks": true,
+      "preserveConstEnums": true,
+      "forceConsistentCasingInFileNames": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "downlevelIteration": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+  }
